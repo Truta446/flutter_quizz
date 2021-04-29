@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_quizz/challenge/widget/awnser/awnser_widget.dart';
+import 'package:flutter_quizz/challenge/widget/answer/answer_widget.dart';
 import 'package:flutter_quizz/core/app_text_styles.dart';
 
 class QuizWidget extends StatelessWidget {
@@ -18,28 +18,24 @@ class QuizWidget extends StatelessWidget {
           SizedBox(
             height: 24,
           ),
-          AwnserWidget(
+          AnswerWidget(
             title:
                 "Possibilita a criação de aplicativos compilados nativamente.",
           ),
-          AwnserWidget(
+          AnswerWidget(
             isRight: false,
             isSelected: true,
             title:
                 "Possibilita a criação de aplicativos compilados nativamente.",
           ),
-          AwnserWidget(
+          AnswerWidget(
             title:
                 "Possibilita a criação de aplicativos compilados nativamente.",
           ),
-          AwnserWidget(
+          AnswerWidget(
             title:
                 "Possibilita a criação de aplicativos compilados nativamente.",
           ),
-          AwnserWidget(
-            title:
-                "Possibilita a criação de aplicativos compilados nativamente.",
-          )
         ],
       ),
     );
