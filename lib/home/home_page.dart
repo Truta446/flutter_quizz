@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_quizz/challenge/challenge_page.dart';
 import 'package:flutter_quizz/core/app_colors.dart';
 import 'package:flutter_quizz/home/home_controller.dart';
 import 'package:flutter_quizz/home/home_state.dart';
@@ -66,12 +67,25 @@ class _HomePageState extends State<HomePage> {
                   mainAxisSpacing: 16,
                   crossAxisCount: 2,
                   children: controller.quizzes!
-                      .map((e) => QuizCardWidget(
-                            percent: e.questionAnswered / e.questions.length,
-                            title: e.title,
-                            completed:
-                                "${e.questionAnswered}/${e.questions.length}",
-                          ))
+                      .map(
+                        (e) => QuizCardWidget(
+                          percent: e.questionAnswered / e.questions.length,
+                          title: e.title,
+                          completed:
+                              "${e.questionAnswered}/${e.questions.length}",
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => ChallengePage(
+                                  questions: e.questions,
+                                  title: e.title,
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                      )
                       .toList(),
                 ),
               ),
