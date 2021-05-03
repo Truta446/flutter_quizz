@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/assets/cover.png"/>
+  <img src="/assets/images/cover.png"/>
 </p>
 
 # Next Level Week - Dev Quiz (NLW5)
@@ -120,6 +120,6 @@
 
    <div align="center">
 
-   [![Linkedin Badge](https://img.shields.io/badge/-Felipe%20Sales-292929?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/juan-versolato-10b238159/)](https://www.linkedin.com/in/juan-versolato-10b238159/)
+   [![Linkedin Badge](https://img.shields.io/badge/-Juan%20Versolato-292929?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/juan-versolato-10b238159/)](https://www.linkedin.com/in/juan-versolato-10b238159/)
 
    </div>
