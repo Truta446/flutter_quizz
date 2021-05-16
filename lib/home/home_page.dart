@@ -6,6 +6,7 @@ import 'package:flutter_quizz/home/home_state.dart';
 import 'package:flutter_quizz/home/widgets/appbar/app_bar_widget.dart';
 import 'package:flutter_quizz/home/widgets/level_button/level_button_widget.dart';
 import 'package:flutter_quizz/home/widgets/quiz_card/quiz_card_widget.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -27,6 +28,30 @@ class _HomePageState extends State<HomePage> {
     controller.stateNotifier.addListener(() {
       setState(() {});
     });
+  }
+
+  Future<int> getQtyAnswersRightFlutter() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int qtyAnswersRightFlutter = prefs.getInt('qtyAnswersRightFlutter') ?? 0;
+    return qtyAnswersRightFlutter;
+  }
+
+  Future<int> getQtyAnswersRightAngular() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int qtyAnswersRightAngular = prefs.getInt('qtyAnswersRightAngular') ?? 0;
+    return qtyAnswersRightAngular;
+  }
+
+  Future<int> getQtyAnswersRightLogic() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int qtyAnswersRightLogic = prefs.getInt('qtyAnswersRightLogic') ?? 0;
+    return qtyAnswersRightLogic;
+  }
+
+  Future<int> getQtyAnswersRightData() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int qtyAnswersRightData = prefs.getInt('qtyAnswersRightData') ?? 0;
+    return qtyAnswersRightData;
   }
 
   @override
@@ -66,27 +91,104 @@ class _HomePageState extends State<HomePage> {
                   crossAxisSpacing: 16,
                   mainAxisSpacing: 16,
                   crossAxisCount: 2,
-                  children: controller.quizzes!
-                      .map(
-                        (e) => QuizCardWidget(
-                          percent: e.questionAnswered / e.questions.length,
-                          title: e.title,
+                  children: [
+                    FutureBuilder<int>(
+                      future: getQtyAnswersRightFlutter(),
+                      builder: (context, snapshot) {
+                        return QuizCardWidget(
+                          percent: snapshot.data! /
+                              controller.quizzes![0].questions.length,
+                          title: controller.quizzes![0].title,
+                          image: controller.quizzes![0].image,
                           completed:
-                              "${e.questionAnswered}/${e.questions.length}",
+                              "${snapshot.data!}/${controller.quizzes![0].questions.length}",
                           onTap: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => ChallengePage(
-                                  questions: e.questions,
-                                  title: e.title,
+                                builder: (_) => ChallengePage(
+                                  questions: controller.quizzes![0].questions,
+                                  title: controller.quizzes![0].title,
                                 ),
                               ),
-                            );
+                            ).then((_) => setState(() {}));
                           },
-                        ),
-                      )
-                      .toList(),
+                        );
+                      },
+                    ),
+                    FutureBuilder<int>(
+                      future: getQtyAnswersRightAngular(),
+                      builder: (context, snapshot) {
+                        return QuizCardWidget(
+                          percent: snapshot.data! /
+                              controller.quizzes![1].questions.length,
+                          title: controller.quizzes![1].title,
+                          image: controller.quizzes![1].image,
+                          completed:
+                              "${snapshot.data!}/${controller.quizzes![1].questions.length}",
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => ChallengePage(
+                                  questions: controller.quizzes![1].questions,
+                                  title: controller.quizzes![1].title,
+                                ),
+                              ),
+                            ).then((_) => setState(() {}));
+                          },
+                        );
+                      },
+                    ),
+                    FutureBuilder<int>(
+                      future: getQtyAnswersRightLogic(),
+                      builder: (context, snapshot) {
+                        return QuizCardWidget(
+                          percent: snapshot.data! /
+                              controller.quizzes![2].questions.length,
+                          title: controller.quizzes![2].title,
+                          image: controller.quizzes![2].image,
+                          completed:
+                              "${snapshot.data!}/${controller.quizzes![2].questions.length}",
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => ChallengePage(
+                                  questions: controller.quizzes![2].questions,
+                                  title: controller.quizzes![2].title,
+                                ),
+                              ),
+                            ).then((_) => setState(() {}));
+                          },
+                        );
+                      },
+                    ),
+                    FutureBuilder<int>(
+                      future: getQtyAnswersRightData(),
+                      builder: (context, snapshot) {
+                        return QuizCardWidget(
+                          percent: snapshot.data! /
+                              controller.quizzes![3].questions.length,
+                          title: controller.quizzes![3].title,
+                          image: controller.quizzes![3].image,
+                          completed:
+                              "${snapshot.data!}/${controller.quizzes![3].questions.length}",
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => ChallengePage(
+                                  questions: controller.quizzes![3].questions,
+                                  title: controller.quizzes![3].title,
+                                ),
+                              ),
+                            ).then((_) => setState(() {}));
+                          },
+                        );
+                      },
+                    ),
+                  ],
                 ),
               ),
             ],

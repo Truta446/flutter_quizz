@@ -3,6 +3,7 @@ import 'package:flutter_quizz/core/app_gradients.dart';
 import 'package:flutter_quizz/core/app_text_styles.dart';
 import 'package:flutter_quizz/home/widgets/score_card/score_card_widget.dart';
 import 'package:flutter_quizz/shared/models/user_model.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class AppBarWidget extends PreferredSize {
   final UserModel user;
@@ -49,12 +50,30 @@ class AppBarWidget extends PreferredSize {
                 ),
                 Align(
                   alignment: Alignment(0.0, 1.0),
-                  child: ScoreCardWidget(
-                    percent: user.score / 100,
+                  child: FutureBuilder<int>(
+                    future: getQtyAnswersRight(),
+                    builder: (context, snapshot) {
+                      return ScoreCardWidget(
+                        percent: snapshot.data! / user.qtyRightAnsewrs,
+                        key: UniqueKey(),
+                      );
+                    },
                   ),
                 ),
               ],
             ),
           ),
         );
+
+  static Future<int> getQtyAnswersRight() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int qtyAnswersRightFlutter = prefs.getInt('qtyAnswersRightFlutter') ?? 0;
+    int qtyAnswersRightAngular = prefs.getInt('qtyAnswersRightAngular') ?? 0;
+    int qtyAnswersRightData = prefs.getInt('qtyAnswersRightData') ?? 0;
+    int qtyAnswersRightLogic = prefs.getInt('qtyAnswersRightLogic') ?? 0;
+    return qtyAnswersRightFlutter +
+        qtyAnswersRightAngular +
+        qtyAnswersRightData +
+        qtyAnswersRightLogic;
+  }
 }

@@ -5,6 +5,7 @@ import 'package:flutter_quizz/challenge/widget/question_indicator/question_indic
 import 'package:flutter_quizz/challenge/widget/quiz/quiz_widget.dart';
 import 'package:flutter_quizz/result/result_page.dart';
 import 'package:flutter_quizz/shared/models/question_model.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class ChallengePage extends StatefulWidget {
   final List<QuestionModel> questions;
@@ -40,10 +41,40 @@ class _ChallengePageState extends State<ChallengePage> {
       );
   }
 
-  void onSelected(bool value) {
-    if (value) controller.qtyAnswersRight++;
+  void onSelected(bool value) async {
+    if (value) {
+      SharedPreferences prefs = await SharedPreferences.getInstance();
+
+      if (widget.title == 'Flutter') {
+        controller.qtyAnswersRightFlutter++;
+        prefs.setInt(
+            'qtyAnswersRightFlutter', controller.qtyAnswersRightFlutter);
+      } else if (widget.title == 'Angular') {
+        controller.qtyAnswersRightAngular++;
+        prefs.setInt(
+            'qtyAnswersRightAngular', controller.qtyAnswersRightAngular);
+      } else if (widget.title == 'Estrutura de dados') {
+        controller.qtyAnswersRightData++;
+        prefs.setInt('qtyAnswersRightData', controller.qtyAnswersRightData);
+      } else {
+        controller.qtyAnswersRightLogic++;
+        prefs.setInt('qtyAnswersRightLogic', controller.qtyAnswersRightLogic);
+      }
+    }
 
     nextPage();
+  }
+
+  int get qtyAnswersRight {
+    if (widget.title == 'Flutter') {
+      return controller.qtyAnswersRightFlutter;
+    } else if (widget.title == 'Angular') {
+      return controller.qtyAnswersRightAngular;
+    } else if (widget.title == 'Estrutura de dados') {
+      return controller.qtyAnswersRightData;
+    } else {
+      return controller.qtyAnswersRightLogic;
+    }
   }
 
   @override
@@ -107,7 +138,7 @@ class _ChallengePageState extends State<ChallengePage> {
                             builder: (context) => ResultPage(
                               title: widget.title,
                               length: widget.questions.length,
-                              result: controller.qtyAnswersRight,
+                              result: qtyAnswersRight,
                             ),
                           ),
                         );

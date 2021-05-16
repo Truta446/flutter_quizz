@@ -10,6 +10,24 @@ class ScoreCardWidget extends StatelessWidget {
     required this.percent,
   }) : super(key: key);
 
+  String get title {
+    if (this.percent == 0)
+      return 'Vamos começar';
+    else if (this.percent == 1)
+      return 'Parabéns';
+    else
+      return 'Bom resultado';
+  }
+
+  String get subtitle {
+    if (this.percent == 0)
+      return 'Complete os desafios e avance em conhecimento.';
+    else if (this.percent == 1)
+      return 'Você conseguiu completar todos os desafios.';
+    else
+      return 'Seu conhecimento está sendo aprimorado :)';
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -40,11 +58,11 @@ class ScoreCardWidget extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Vamos começar",
+                        title,
                         style: AppTextStyles.heading,
                       ),
                       Text(
-                        "Complete os desafios e avance em conhecimento.",
+                        subtitle,
                         style: AppTextStyles.body,
                       )
                     ],

@@ -1,9 +1,9 @@
 [
     {
         "title": "Flutter",
-        "imagem": "blocks",
+        "image": "assets/images/laptop.png",
         "questionAnswered": 0,
-        "level": "medium",
+        "level": "easy",
         "questions": [
             {
                 "title": "Quem criou o Dart?",
@@ -42,43 +42,43 @@
                 ]
             },
             {
-                "title": "Quando foi lançada a versão estável do Flutter?",
+                "title": "O que o Flutter faz em sua totalidade?",
                 "answers": [
                     {
-                        "title": "Fevereiro de 2020"
+                        "title": "KIt de desenvolvimento de interface de usuário"
                     },
                     {
-                        "title": "Dezembro de 2018"
-                    },
-                    {
-                        "title": "Dezembro de 2019",
+                        "title": "Possibilita a criação de aplicativos compilados nativamente",
                         "isRight": true
                     },
                     {
-                        "title": "Maio de 2019"
+                        "title": "Acho que é uma marca de café do Himalaia"
+                    },
+                    {
+                        "title": "Possibilita a criação de desktops que são muito incríveis"
                     }
                 ]
             },
             {
-                "title": "Quando foi lançada a versão estável do Flutter?",
+                "title": "O que são widgets?",
                 "answers": [
                     {
-                        "title": "Fevereiro de 2020"
-                    },
-                    {
-                        "title": "Dezembro de 2018"
-                    },
-                    {
-                        "title": "Dezembro de 2019",
+                        "title": "Um widget é um elemento da interface do usuário",
                         "isRight": true
                     },
                     {
-                        "title": "Maio de 2019"
+                        "title": "Um widget é um aplicativo"
+                    },
+                    {
+                        "title": "Um widget é um componente"
+                    },
+                    {
+                        "title": "Um widget é um sistema de credenciamento"
                     }
                 ]
             },
             {
-                "title": "Quando foi lançada a versão estável do Flutter?",
+                "title": "Para que serve um widget 'SafeArea'?",
                 "answers": [
                     {
                         "title": "Fevereiro de 2020"
@@ -87,47 +87,47 @@
                         "title": "Dezembro de 2018"
                     },
                     {
-                        "title": "Dezembro de 2019",
-                        "isRight": true
+                        "title": "Dezembro de 2019"
                     },
                     {
-                        "title": "Maio de 2019"
+                        "title": "É um widget que facilita a colocação de nossos widgets em uma parte da visualização que não seja obscurecida por barras e outros conteúdos como barras de status.",
+                        "isRight": true
                     }
                 ]
             },
             {
-                "title": "Quando foi lançada a versão estável do Flutter?",
+                "title": "O Flutter é apenas para aplicativos móveis?",
                 "answers": [
                     {
-                        "title": "Fevereiro de 2020"
+                        "title": "Não, é possível construir sistemas operacionais"
                     },
                     {
-                        "title": "Dezembro de 2018"
+                        "title": "Sim, apenas aplicativos"
                     },
                     {
-                        "title": "Dezembro de 2019",
+                        "title": "Não, é possível construir aplicativos da web também",
                         "isRight": true
                     },
                     {
-                        "title": "Maio de 2019"
+                        "title": "Não, é possível construir sistemas embarcados tambem"
                     }
                 ]
             },
             {
-                "title": "Quando foi lançada a versão estável do Flutter?",
+                "title": "O Flutter é realmente nativo?",
                 "answers": [
                     {
-                        "title": "Fevereiro de 2020"
+                        "title": "O Flutter não é nativo pois utiliza uma linguagem funcional"
                     },
                     {
-                        "title": "Dezembro de 2018"
-                    },
-                    {
-                        "title": "Dezembro de 2019",
+                        "title": "O aplicativo Flutter é compilado em um ARM nativo e bibliotecas x86, portanto, tecnicamente, é nativo",
                         "isRight": true
                     },
                     {
-                        "title": "Maio de 2019"
+                        "title": "O aplicativo Flutter é nativo por possuir o Hot Reload"
+                    },
+                    {
+                        "title": "O Flutter não é nativo"
                     }
                 ]
             }
@@ -135,131 +135,563 @@
     },
     {
         "title": "Angular",
-        "imagem": "data",
+        "image": "assets/images/data.png",
         "questionAnswered": 0,
-        "level": "easy",
+        "level": "hard",
         "questions": [
             {
-                "title": "Está curtindo o Flutter?",
+                "title": "Qual das alternativas a seguir é verdadeira sobre o JS Angular ?",
                 "answers": [
                     {
-                        "title": "Estou curtindo.",
+                        "title": "Angular JS é uma estrutura para criar aplicativos da Web em larga escala e alto desempenho, mantendo-os como fáceis de manter."
+                    },
+                    {
+                        "title": "Angular JS fornece aos desenvolvedores opções para gravar aplicativos do lado do cliente (usando JavaScript) de uma maneira limpa do MVC (Model View Controller)."
+                    },
+                    {
+                        "title": "Angular JS é uma poderosa estrutura de desenvolvimento baseada em JavaScript para criar RICH Internet Application (RIA)."
+                    },
+                    {
+                        "title": "Todas as alternativas acima",
                         "isRight": true
-                    },
-                    {
-                        "title": "Não curti muito."
-                    },
-                    {
-                        "title": "Achei muito fácil."
-                    },
-                    {
-                        "title": "Isso não vai entrar na minha cabeça!"
                     }
                 ]
             },
             {
-                "title": "Está curtindo o Flutter?",
+                "title": "O que é ligação de dados em Angular JS?",
                 "answers": [
                     {
-                        "title": "Estou curtindo.",
+                        "title": "Ligação de dados é a técnica para salvar dados html no banco de dados."
+                    },
+                    {
+                        "title": "A ligação de dados é a técnica para vincular dados do banco de dados ao controle html."
+                    },
+                    {
+                        "title": "Ligação de dados é a sincronização automática de dados entre os componentes do modelo e da visualização.",
                         "isRight": true
                     },
                     {
-                        "title": "Não curti muito."
+                        "title": "Ligação de dados é a sincronização automática de dados entre os componentes do modelo e do controlador."
+                    }
+                ]
+            },
+            {
+                "title": "Qual diretiva é usada para ligação de dados em Angular JS?",
+                "answers": [
+                    {
+                        "title": "ng-data"
                     },
                     {
-                        "title": "Achei muito fácil."
+                        "title": "ng-app"
                     },
                     {
-                        "title": "Isso não vai entrar na minha cabeça!"
+                        "title": "ng-bind",
+                        "isRight": true
+                    },
+                    {
+                        "title": "controlador de ng"
+                    }
+                ]
+            },
+            {
+                "title": "O que acontece quando a página que contém aplicativos Angular JS baseados em JS é carregada.",
+                "answers": [
+                    {
+                        "title": "Um documento HTML é carregado no navegador e avaliado pelo navegador."
+                    },
+                    {
+                        "title": "O arquivo Angular está carregado; o objeto global angular é criado."
+                    },
+                    {
+                        "title": "O JavaScript que registra as funções do controlador é executado."
+                    },
+                    {
+                        "title": "Todas os itens acima",
+                        "isRight": true
+                    }
+                ]
+            },
+            {
+                "title": "O que são escopos no JS Angular ?",
+                "answers": [
+                    {
+                        "title": "escopos definem a acessibilidade de uma variável javascript."
+                    },
+                    {
+                        "title": "escopos são objetos que se referem ao modelo. Eles atuam como cola entre o controlador e a visualização.",
+                        "isRight": true
+                    },
+                    {
+                        "title": "Scopes são objetos que se referem ao controlador."
+                    },
+                    {
+                        "title": "Scopes são objetos que se referem às visualizações."
+                    }
+                ]
+            },
+            {
+                "title": "Quais são os controladores no Angular JS?",
+                "answers": [
+                    {
+                        "title": "Controladores são funções JavaScript vinculadas a um escopo específico."
+                    },
+                    {
+                        "title": "O controlador carrega funções para operar com dados e decide qual visualização deve ser atualizada para mostrar os dados atualizados do modelo."
+                    },
+                    {
+                        "title": "Eles são os principais atores no framework Angular JS."
+                    },
+                    {
+                        "title": "Todos os itens acima.",
+                        "isRight": true
+                    }
+                ]
+            },
+            {
+                "title": "Quais são os serviços no Angular JS?",
+                "answers": [
+                    {
+                        "title": "Serviços são objetos singleton que são instanciados apenas uma vez no aplicativo e são usados para executar a tarefa definida.",
+                        "isRight": true
+                    },
+                    {
+                        "title": "Serviços são objetos que o Angular JS usa internamente."
+                    },
+                    {
+                        "title": "Os serviços não são usados no JS Angular ."
+                    },
+                    {
+                        "title": "Services são componentes do servidor Angular JS."
+                    }
+                ]
+            },
+            {
+                "title": "Quais são os filtros no Angular JS?",
+                "answers": [
+                    {
+                        "title": "Os filtros selecionam um subconjunto de itens de uma matriz e retornam uma nova matriz."
+                    },
+                    {
+                        "title": "Os filtros são usados para mostrar itens filtrados de uma lista de itens com base em critérios definidos."
+                    },
+                    {
+                        "title": "Ambos os itens acima.",
+                        "isRight": true
+                    },
+                    {
+                        "title": "Nenhuma das anteriores."
+                    }
+                ]
+            },
+            {
+                "title": "O que é vinculação profunda no JS Angular ?",
+                "answers": [
+                    {
+                        "title": "A vinculação profunda permite codificar o estado do aplicativo no URL para que ele possa ser marcado como favorito.",
+                        "isRight": true
+                    },
+                    {
+                        "title": "A ligação profunda é uma técnica baseada em SEO."
+                    },
+                    {
+                        "title": "Link direto refere-se ao link de várias visualizações a uma página central."
+                    },
+                    {
+                        "title": "Nenhuma das anteriores."
+                    }
+                ]
+            },
+            {
+                "title": "Qual das opções a seguir não é uma diretiva básica do Angular JS.",
+                "answers": [
+                    {
+                        "title": "ng-app"
+                    },
+                    {
+                        "title": "ng-model"
+                    },
+                    {
+                        "title": "ng-bind"
+                    },
+                    {
+                        "title": "ng-state",
+                        "isRight": true
                     }
                 ]
             }
         ]
     },
     {
-        "title": "Elixir",
-        "imagem": "hierarchy",
+        "title": "Raciocínio Lógico",
+        "image": "assets/images/hierarchy.png",
         "questionAnswered": 0,
-        "level": "Expert",
+        "level": "expert",
         "questions": [
             {
-                "title": "Está curtindo o Flutter?",
+                "title": "A sequência a seguir S,O,L,D,A,D,O,S,O,L,D,A,D ,O,S,... representa a repetição infinita da palavra SOLDADO, então a letra que ocupa a posição 92º é representado pela alternativa:",
                 "answers": [
                     {
-                        "title": "Estou curtindo.",
+                        "title": "S",
                         "isRight": true
                     },
                     {
-                        "title": "Não curti muito."
+                        "title": "O"
                     },
                     {
-                        "title": "Achei muito fácil."
+                        "title": "L"
                     },
                     {
-                        "title": "Isso não vai entrar na minha cabeça!"
+                        "title": "D"
                     }
                 ]
             },
             {
-                "title": "Está curtindo o Flutter?",
+                "title": "Um suspeito foi detido preventivamente em uma terça-feira e seria julgado depois de 50 dias. O seu julgamento aconteceu em uma:",
                 "answers": [
                     {
-                        "title": "Estou curtindo.",
+                        "title": "segunda-feira."
+                    },
+                    {
+                        "title": "terça-feira."
+                    },
+                    {
+                        "title": "quarta-feira.",
                         "isRight": true
                     },
                     {
-                        "title": "Não curti muito."
+                        "title": "quinta-feira."
+                    }
+                ]
+            },
+            {
+                "title": "A sequência a seguir segue um padrão que se repete infinitamente: 1,4,9,16,25,36,49,... Assim, a soma dos dois próximos termos dessa sequência será:",
+                "answers": [
+                    {
+                        "title": "145",
+                        "isRight": true
                     },
                     {
-                        "title": "Achei muito fácil."
+                        "title": "146"
                     },
                     {
-                        "title": "Isso não vai entrar na minha cabeça!"
+                        "title": "147"
+                    },
+                    {
+                        "title": "148"
+                    }
+                ]
+            },
+            {
+                "title": "Considere a sequência 99.999; 89.998; 79.997; 69.996;... o 6º elemento supera a diferença entre o 7º e o 8º em:",
+                "answers": [
+                    {
+                        "title": "39.994"
+                    },
+                    {
+                        "title": "39.996"
+                    },
+                    {
+                        "title": "39.997"
+                    },
+                    {
+                        "title": "39.993",
+                        "isRight": true
+                    }
+                ]
+            },
+            {
+                "title": "Considere a seguinte sequência: 6, 16, 26, 36, 46, 56, 66.. - Por meio do reconhecimento de padrão, assinale a alternativa que indica corretamente a soma dos 8 primeiros números dessa sequência.",
+                "answers": [
+                    {
+                        "title": "252"
+                    },
+                    {
+                        "title": "328",
+                        "isRight": true
+                    },
+                    {
+                        "title": "356"
+                    },
+                    {
+                        "title": "420"
+                    }
+                ]
+            },
+            {
+                "title": "A sequência a seguir @,#,$,%,&,@,#,$,%,&,@..., repete-se infinitamente. O 207º símbolo na sequência apresentada corresponde à alternativa:",
+                "answers": [
+                    {
+                        "title": "@"
+                    },
+                    {
+                        "title": "#",
+                        "isRight": true
+                    },
+                    {
+                        "title": "$"
+                    },
+                    {
+                        "title": "%"
+                    }
+                ]
+            },
+            {
+                "title": "A seguinte sequência numérica obedece a uma determinada lei de formação - 1, 3, 7, 4, 9, 12, 7, 27, 17, 10, 81... - O 14º termo dessa sequência é:",
+                "answers": [
+                    {
+                        "title": "22"
+                    },
+                    {
+                        "title": "13"
+                    },
+                    {
+                        "title": "243",
+                        "isRight": true
+                    },
+                    {
+                        "title": "729"
+                    }
+                ]
+            },
+            {
+                "title": "A sequência (J, J, A, S, O, N, D, ...) possui certo padrão, então o próximo termo é:",
+                "answers": [
+                    {
+                        "title": "J",
+                        "isRight": true
+                    },
+                    {
+                        "title": "K"
+                    },
+                    {
+                        "title": "A"
+                    },
+                    {
+                        "title": "S"
+                    }
+                ]
+            },
+            {
+                "title": "A sequência 1, 1, 2, 3, 5, 8, 13, 21, 34, ... segue um padrão que se repete infinitamente. Com base nessas informações, o próximo termo será:",
+                "answers": [
+                    {
+                        "title": "54"
+                    },
+                    {
+                        "title": "55",
+                        "isRight": true
+                    },
+                    {
+                        "title": "56"
+                    },
+                    {
+                        "title": "57"
+                    }
+                ]
+            },
+            {
+                "title": "A sequência a seguir (3.072, 768, 192, 48, 12, ...) possui um padrão até o 6º termo. Com base nessas informações, o 6º termo será:",
+                "answers": [
+                    {
+                        "title": "2"
+                    },
+                    {
+                        "title": "1"
+                    },
+                    {
+                        "title": "4"
+                    },
+                    {
+                        "title": "3",
+                        "isRight": true
                     }
                 ]
             }
         ]
     },
     {
-        "title": "React",
-        "imagem": "laptop",
+        "title": "Estrutura de dados",
+        "image": "assets/images/blocks.png",
         "questionAnswered": 0,
-        "level": "Hard",
+        "level": "medium",
         "questions": [
             {
-                "title": "Está curtindo o Flutter?",
+                "title": "Em determinada estrutura de dados, os valores seguem a regra segundo a qual o último a entrar é o primeiro a sair. Essa estrutura é do tipo:",
                 "answers": [
                     {
-                        "title": "Estou curtindo.",
+                        "title": "pilha",
                         "isRight": true
                     },
                     {
-                        "title": "Não curti muito."
+                        "title": "fila"
                     },
                     {
-                        "title": "Achei muito fácil."
+                        "title": "lista encadeada"
                     },
                     {
-                        "title": "Isso não vai entrar na minha cabeça!"
+                        "title": "lista duplamente encadeada"
                     }
                 ]
             },
             {
-                "title": "Está curtindo o Flutter?",
+                "title": "Na estrutura de dados denominada FILA,",
                 "answers": [
                     {
-                        "title": "Estou curtindo.",
+                        "title": "o último elemento a ser inserido será o primeiro a ser retirado."
+                    },
+                    {
+                        "title": "o primeiro elemento a ser inserido será o primeiro a ser retirado: adiciona-se item no fim e remove-se item do início.",
                         "isRight": true
                     },
                     {
-                        "title": "Não curti muito."
+                        "title": "os elementos de um mesmo tipo de dado estão organizados de maneira sequencial e ordenada."
                     },
                     {
-                        "title": "Achei muito fácil."
+                        "title": "os elementos não estão necessariamente armazenados sequencialmente na memória por ordem descrente de valores."
+                    }
+                ]
+            },
+            {
+                "title": "A estrutura de dados _____________, permite a inserção e a eliminação de elementos em ambas as extremidades.",
+                "answers": [
+                    {
+                        "title": "fila"
                     },
                     {
-                        "title": "Isso não vai entrar na minha cabeça!"
+                        "title": "deque",
+                        "isRight": true
+                    },
+                    {
+                        "title": "grafos"
+                    },
+                    {
+                        "title": "pilha"
+                    }
+                ]
+            },
+            {
+                "title": "Quando uma estrutura de dados envolve a utilização de mais de um tipo básico de dado, denomina-se",
+                "answers": [
+                    {
+                        "title": "multivariável"
+                    },
+                    {
+                        "title": " aleatória"
+                    },
+                    {
+                        "title": "dinâmica"
+                    },
+                    {
+                        "title": "heterogênea",
+                        "isRight": true
+                    }
+                ]
+            },
+            {
+                "title": "Assinale a alternativa que apresenta a denominação de uma passagem de parâmetro a um procedimento em que tal procedimento de um programa é chamado, recebendo a sua própria cópia dos parâmetros passados.",
+                "answers": [
+                    {
+                        "title": "Ponteiro"
+                    },
+                    {
+                        "title": "Referência"
+                    },
+                    {
+                        "title": "Valor",
+                        "isRight": true
+                    },
+                    {
+                        "title": "Subprograma"
+                    }
+                ]
+            },
+            {
+                "title": "Considerando uma árvore de busca binária, assinale a alternativa correta.",
+                "answers": [
+                    {
+                        "title": "Cada nó possui no máximo quatro ramificações em subárvores.",
+                        "isRight": true
+                    },
+                    {
+                        "title": "A profundidade de um nó é uma medida de sua distância até o filho mais distante."
+                    },
+                    {
+                        "title": "Não há entradas duplicadas em uma árvore de busca binária."
+                    },
+                    {
+                        "title": "Para utilizar uma árvore de busca binária, um dos requisitos fundamentais é que ela esteja ordenada."
+                    }
+                ]
+            },
+            {
+                "title": "A pilha é uma estrutura de dados baseada no princípio LIFO (Last-In, First-Out), que tem fundamentalmente duas operações básicas que são:",
+                "answers": [
+                    {
+                        "title": "enqueue e pop"
+                    },
+                    {
+                        "title": "enqueue e dequeue"
+                    },
+                    {
+                        "title": "push e dequeue"
+                    },
+                    {
+                        "title": "push e pop",
+                        "isRight": true
+                    }
+                ]
+            },
+            {
+                "title": "Sobre HTML5 é correto afirmar que:",
+                "answers": [
+                    {
+                        "title": "É uma linguagem de marcação para a World Wide Web, em sua quinta versão.",
+                        "isRight": true
+                    },
+                    {
+                        "title": "É uma linguagem procedural muito antiga e que deixou de ser utilizada após o lançamento de sua quinta versão."
+                    },
+                    {
+                        "title": "Uma linguagem de marcação criada pela Microsoft, que só é executada pelo navegador Internet Explorer."
+                    },
+                    {
+                        "title": "Uma linguagem de programação orientada a objetos, em sua quinta versão."
+                    }
+                ]
+            },
+            {
+                "title": "Os bancos de dados relacionais possuem algumas operações básicas comuns entre eles, entre as quais podemos destacar o CRUD, que são operações de criação, leitura, atualização e exclusão de dados. Os comandos correspondentes são:",
+                "answers": [
+                    {
+                        "title": "SELECT, GRANT, UPDATE, FLUSH."
+                    },
+                    {
+                        "title": "DELETE, UPDATE, FLUSH, DROP."
+                    },
+                    {
+                        "title": "INSERT, DROP, UPDATE, DELETE."
+                    },
+                    {
+                        "title": "INSERT, SELECT, UPDATE, DELETE.",
+                        "isRight": true
+                    }
+                ]
+            },
+            {
+                "title": "A interface entre o sistema operacional e os programas de usuários é definida por um conjunto de instruções estendidas disponibilizadas pelo sistema operacional. Essas instruções são denominadas",
+                "answers": [
+                    {
+                        "title": "processos."
+                    },
+                    {
+                        "title": "chamadas de sistema.",
+                        "isRight": true
+                    },
+                    {
+                        "title": "prompt de comando."
+                    },
+                    {
+                        "title": "vetores de interrupção."
                     }
                 ]
             }

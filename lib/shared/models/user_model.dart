@@ -3,12 +3,14 @@ import 'dart:convert';
 class UserModel {
   final String name;
   final String photoUrl;
-  final int score;
+  late final int score;
+  late final int qtyRightAnsewrs;
 
   UserModel({
     required this.name,
     required this.photoUrl,
     this.score = 0,
+    this.qtyRightAnsewrs = 0,
   });
 
   Map<String, dynamic> toMap() {
@@ -16,6 +18,7 @@ class UserModel {
       'name': name,
       'photoUrl': photoUrl,
       'score': score,
+      'qtyRightAnsewrs': qtyRightAnsewrs,
     };
   }
 
@@ -24,6 +27,7 @@ class UserModel {
       name: map['name'],
       photoUrl: map['photoUrl'],
       score: map['score'],
+      qtyRightAnsewrs: map['qtyRightAnsewrs'],
     );
   }
 
